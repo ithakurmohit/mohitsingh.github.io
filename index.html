@@ -1,71 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mohit Singh | Android Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohit Singh — Android Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <div class="container">
+      <img class="avatar" src="assets/profile.jpg" alt="Mohit Singh">
+      <div class="hero-text">
+        <h1>Mohit Singh</h1>
+        <p class="sub">Android & Flutter Developer • Kotlin • Java • Firebase</p>
+        <p class="location">Lucknow, Uttar Pradesh, India</p>
+        <div class="contact-row">
+          <a href="mailto:mohitsinghdevgana@gmail.com">mohitsinghdevgana@gmail.com</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/ithakurmohit" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<header>
-  <h1>Mohit Singh</h1>
-  <p>Android Developer | Kotlin | Java | Flutter</p>
-</header>
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Experienced Android Developer with 3+ years in building production apps.
+        Strong background in Kotlin, Java, Flutter and working with Firebase, payment gateways
+        and Android NDK for API security. (Summary & experience taken from CV). :contentReference[oaicite:1]{index=1}
+      </p>
+      <ul class="meta">
+        <li><strong>Top skills:</strong> Kotlin, Java, Flutter, Jetpack, Firebase, REST APIs, MVVM</li>
+        <li><strong>Certifications:</strong> PHP, Java, HTML</li>
+      </ul>
+    </section>
 
-<section class="about">
-  <img src="assets/profile.jpg" alt="Profile">
-  <p>
-    I am an Android Developer with 4+ years of experience in building
-    high-quality mobile applications. I have worked on multiple live
-    apps published on Google Play Store.
-  </p>
-</section>
+    <section id="projects">
+      <h2>Selected Projects</h2>
 
-<section class="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Kotlin / Java</li>
-    <li>Flutter</li>
-    <li>Jetpack Components</li>
-    <li>Firebase</li>
-    <li>REST APIs</li>
-    <li>MVVM Architecture</li>
-  </ul>
-</section>
+      <div class="grid">
+        <article class="project">
+          <img src="assets/app1.png" alt="SpaciMax screenshot">
+          <div class="p-body">
+            <h3>SpaciMax</h3>
+            <p>Business & productivity app — enhancements & bug fixes. (Play Store)</p>
+            <a href="https://play.google.com/store/apps/details?id=com.mad.SpaciMax" target="_blank" class="btn">Open on Play Store</a>
+          </div>
+        </article>
 
-<section class="projects">
-  <h2>Projects</h2>
+        <article class="project">
+          <img src="assets/app2.png" alt="Sums screenshot">
+          <div class="p-body">
+            <h3>SUMS</h3>
+            <p>Education / enterprise app. Implemented features and release updates.</p>
+            <a href="http://play.google.com/store/apps/details?id=com.sujaltech.sums&hl=en_IN" target="_blank" class="btn">Open on Play Store</a>
+          </div>
+        </article>
 
-  <div class="card">
-    <img src="assets/app1.png">
-    <h3>SpaciMax</h3>
-    <p>Business & productivity Android application</p>
-    <a href="https://play.google.com/store/apps/details?id=com.mad.SpaciMax" target="_blank">
-      Play Store
-    </a>
-  </div>
+        <article class="project">
+          <img src="assets/app3.png" alt="Siccura Lite">
+          <div class="p-body">
+            <h3>Siccura Lite</h3>
+            <p>Security & tracking application — worked on core Android modules.</p>
+            <a href="https://play.google.com/store/apps/details?id=yw.wemet.siccuraLite&hl=en_IN" target="_blank" class="btn">Open on Play Store</a>
+          </div>
+        </article>
 
-  <div class="card">
-    <img src="assets/app2.png">
-    <h3>Siccura Lite</h3>
-    <p>Security & tracking mobile application</p>
-    <a href="https://play.google.com/store/apps/details?id=yw.wemet.siccuraLite" target="_blank">
-      Play Store
-    </a>
-  </div>
+        <article class="project">
+          <img src="assets/app4.png" alt="Doc Viewer">
+          <div class="p-body">
+            <h3>Doc Viewer</h3>
+            <p>Document viewer app — performance improvements and bug fixes.</p>
+            <a href="https://play.google.com/store/apps/details?id=yw.wemet.docviewer" target="_blank" class="btn">Open on Play Store</a>
+          </div>
+        </article>
 
-</section>
+        <article class="project">
+          <img src="assets/app5.png" alt="Starlyte Mobile">
+          <div class="p-body">
+            <h3>Starlyte Mobile</h3>
+            <p>Mobile client for Starlyte platform — UI & integration work.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.webazu.starlytemobile&hl=en_IN" target="_blank" class="btn">Open on Play Store</a>
+          </div>
+        </article>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: mohitsingh@email.com</p>
-  <p>GitHub: <a href="https://github.com/mohitsingh" target="_blank">github.com/mohitsingh</a></p>
-  <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-</section>
+        <article class="project">
+          <img src="assets/app6.png" alt="UseMe Wallet">
+          <div class="p-body">
+            <h3>UseMe Wallet</h3>
+            <p>Wallet & recharge app — worked on payments (Paytm, Cashfree, Razorpay), AePS, and AAR libraries.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.useme.wallet&hl=en_IN" target="_blank" class="btn">Open on Play Store</a>
+          </div>
+        </article>
 
-<footer>
-  <p>© 2025 Mohit Singh</p>
-</footer>
+        <article class="project">
+          <img src="assets/app7.png" alt="Rajkamal App">
+          <div class="p-body">
+            <h3>Rajkamal App</h3>
+            <p>Client app — feature enhancements, bug fixes and release management.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.app.rajkamal&hl=en_IN" target="_blank" class="btn">Open on Play Store</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="exp-list">
+        <li>
+          <strong>Comrade Tech Solutions</strong> — Android & Flutter Developer (Jul 2023 – Present)
+          <p>Enhancements, bug fixes, payment integrations and API security.</p>
+        </li>
+        <li>
+          <strong>Sanda Group</strong> — Java & Android Developer (Nov 2022 – Jun 2023)</li>
+        <li>
+          <strong>AARA Technologies Pvt Ltd</strong> — Android Developer (May 2022 – Nov 2022)</li>
+        <li>
+          <strong>PWS Information Technology</strong> — Android Developer (Jan 2021 – Apr 2022)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Phone: <a href="tel:+917905253288">+91 79052 53288</a></p>
+      <p>Email: <a href="mailto:mohitsinghdevgana@gmail.com">mohitsinghdevgana@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ithakurmohit" target="_blank">ithakurmohit</a></p>
+      <p><a class="btn" href="assets/Mohit_cv_04122025.pdf" download>Download Resume (PDF)</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mohit Singh — Android & Flutter Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
