@@ -8,3 +8,56 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
   });
 });
+
+
+
+const appData = {
+  siccura: {
+    title: "Siccura Lite",
+    desc: "Security & tracking Android application (now removed from Play Store).",
+    tech: ["Kotlin", "Firebase", "REST API", "MVVM"],
+    images: [
+      "assets/siccura1.png",
+      "assets/siccura2.png"
+    ],
+    download: "https://drive.google.com/your-apk-link"
+  },
+
+  docviewer: {
+    title: "Doc Viewer",
+    desc: "PDF, Word & document viewer Android app.",
+    tech: ["Java", "Android SDK", "PDF Engine"],
+    images: [
+      "assets/doc1.png",
+      "assets/doc2.png"
+    ],
+    download: "https://drive.google.com/your-apk-link"
+  }
+};
+
+function openModal(key) {
+  const app = appData[key];
+
+  document.getElementById("modalTitle").innerText = app.title;
+  document.getElementById("modalDesc").innerText = app.desc;
+
+  const techDiv = document.getElementById("modalTech");
+  techDiv.innerHTML = "";
+  app.tech.forEach(t =>
+    techDiv.innerHTML += `<span>${t}</span>`
+  );
+
+  const imgDiv = document.getElementById("modalImages");
+  imgDiv.innerHTML = "";
+  app.images.forEach(img =>
+    imgDiv.innerHTML += `<img src="${img}">`
+  );
+
+  document.getElementById("modalDownload").href = app.download;
+
+  document.getElementById("appModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("appModal").style.display = "none";
+}
